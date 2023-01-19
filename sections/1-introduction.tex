@@ -1,0 +1,24 @@
+\section{Einleitung}\label{sec:introduction}
+
+Über die letzten Jahre haben viele Städte damit begonnen, unterschiedliche Sensoren zu verbauen.
+Diese werden unter anderem dazu genutzt, um zu prüfen, ob ein Parkplatz frei ist, wie gut oder schlecht die Luftqualität ist oder wie warm es aktuell ist \autocite{Chaudhari.2020.LTEACRaDC}.
+Darüber hinaus können viele weitere Werte gemessen werden.
+
+Bei den so entstandenen Netzen handelt es sich zumeist um sogenannte \gls{lpwan}[s]. Diese können auf Basis unterschiedlicher Technologien aufgebaut sein und funktionieren daher nicht alle einheitlich. Das hat zur Folge, dass in den meisten Fällen nur der Ersteller des Netzes Zugriff auf die Daten hat. Eine Interaktion zwischen mehreren Netzen, um genauere Daten zu erzielen oder Daten besser verteilen zu können, wird deutlich erschwert.
+
+Aus der Open-Data-Strategie der Bundesregierung geht hervor, dass die meisten der so gesammelten Daten von den Städten öffentlich zur Verfügung gestellt werden müssen \autocite{BMI.}.
+Wie dies genau geschieht, ist den Städten selbst überlassen. Viele Daten werden unter \url{https://www.govdata.de/} zur Verfügung gestellt, aber es gibt auch andere Quellen. Zumeist müssen die Daten dabei manuell heruntergeladen werden.
+
+Das Format der Daten unterscheidet sich ebenfalls. Während sie meisten als CSV-Datei veröffentlicht werden, sind auch PDF-, XML- und HTML-Dateien sehr häufig vertreten. Für einen großen Teil der Daten auf GovData ist zudem kein Dateityp angeben.
+
+All das macht es schwierig, die Daten in Anwendungen einzubinden und so für den Alltag nutzbar zu machen.
+
+Dabei helfen könnte unter anderem eine Schnittstelle, die die Daten von unterschiedlichen Sensoren für Geräte auffindbar macht.
+Die größten Probleme, die sich dabei stellen, sind die Service Discovery und die verwendete Sprache, um die Sensoren zu beschreiben oder zu finden.
+Dabei können Begriffe, die von Menschen leicht verknüpft werden können, von Maschinen nicht in Verbindung gebracht werden, was dazu führt, dass Services gegebenenfalls nicht gefunden werden.
+Dieses zweite Problem bezieht sich daher auf die Ontologie.
+
+In diesem Bericht werden einige Rechercheergebnisse beschrieben, die für die Arbeit in diesem Bereich von Bedeutung sind.
+Dazu werden in \autoref{sec:relatedworks} zunächst verwandte Arbeiten beschrieben.
+Anschließend werden in \autoref{sec:sd} einige Arten der Service Discovery dargestellt und in \autoref{sec:wot} auf das Web of Things eingegangen, bevor in \autoref{sec:discussion} die Ergebnisse diskutiert werden.
+Abschließend wird in \autoref{sec:conclusion} ein Fazit gebildet.

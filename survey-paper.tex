@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper]{geometry}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[ngerman]{babel}
+\babelprovide[hyphenrules=ngerman-x-latest]{ngerman} % dehyph-exptl
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\usepackage{float}
+
+\usepackage[all]{nowidow}
+
+\usepackage[svgnames]{xcolor}
+
+\usepackage[backend=biber,style=numeric-comp]{biblatex}
+\addbibresource{survey-paper.bib}
+
+\usepackage[german=quotes]{csquotes}
+\SetCiteCommand{\autocite}
+
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\ttfamily,
+}
+
+\newcommand{\thetitle}{Survey: Service Discovery in der Smart City}
+\newcommand{\theauthors}{Tristan Damm, Ellen Landschoof, Lukas Obermann, Louis Richter, Tjorben Wade}
+\newcommand{\thesubject}{Forschungsprojekt, Master Angewandte Informatik, Sommersemester 2022, Hochschule Flensburg}
+
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={\thetitle{}},
+  pdfauthor={\theauthors{}},
+  pdfsubject={\thesubject{}},
+  pdfkeywords={},
+  hidelinks,
+  pdfpagemode=UseOutlines,
+  pdfdirection={L2R},
+  pdfduplex=Simplex,
+  pdfpagelayout=TwoPageRight,
+}
+
+\usepackage{bookmark}
+\bookmarksetup{numbered,open}
+
+\usepackage[skip=2mm, indent=0pt]{parskip}
+
+\usepackage{multicol}
+
+\usepackage[nonumberlist,automake]{glossaries-extra}
+\makeglossaries{}
+\setabbreviationstyle{short-nolong}
+\setabbreviationstyle[acronym]{long-short}
+\setglossarystyle{list}
+\loadglsentries{glossary}
+
+\title{\thetitle{}}
+\author{\theauthors{}}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\maketitle
+
+\pdfbookmark[chapter]{\contentsname}{toc}
+\newpage
+
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+% \section{Einleitung}
+
+% Dies ist eine Einleitung.
+
+% \begin{itemize}
+%   \item List item
+%   \item Test
+% \end{itemize}
+
+% \begin{enumerate}
+%   \item test
+% \end{enumerate}
+
+% \enquote{Dies ist ein Zitat.} \autocites[vgl.][]{Apple.HIG}{Apple.HIG}.
+
+% \autocite[vgl.][]{GermanConventionBureau.2021.DKaSbViDvunCpB}
+
+% \textcquote[vgl.][]{Apple.HIG}{Individualisten, mit dem Ziel der persönlichen Einkommens- und Lebenslustmaximierung}
+
+% \subsection{Sub }
+
+% \subsubsection{Sub}
+
+\input{sections/0-abstract}
+\input{sections/1-introduction}
+\input{sections/2-related-works}
+\input{sections/3-service-discovery}
+\input{sections/4-web-of-things}
+\input{sections/5-discussion}
+\input{sections/6-conclusion}
+
+\newpage
+\phantomsection{}
+\addcontentsline{toc}{section}{\listfigurename}
+\listoffigures
+
+%\phantomsection{}
+%\addcontentsline{toc}{section}{\listtablename}
+%\listoftables
+
+\printglossaries{}
+
+\printbibliography[heading=bibintoc]
+
+\end{document}

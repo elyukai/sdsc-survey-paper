@@ -1,0 +1,22 @@
+\subsection{Kontextabhängig}\label{subsec:contextawaresd}
+
+Dieses Kapitel beschäftigt sich mit dem Thema Kontextabhängige Service Discovery
+und erklärt die verschiedenen Zusammenhänge, die damit verbunden sind. Zunächst wird jedoch der einzelne Begriff Kontext beschrieben.
+Dieser wird in vielen Literaturen definiert, aber in dieser Arbeit wird der englische Begriff Kontext in dem Zusammenhang mit Kontext-Awareness verwendet und sollte nicht mit direkt mit dem deutschen Begriff Kontext verwechselt werden.
+
+Eine sehr gute und allgemeine Definition des Begriffes Kontext lautet: \textcquote{Sukode.2015.CAFIIAS}{Context is any information
+that can be used to characterize the situation of an entity. An entity is a
+person, place, or object that is considered relevant to the
+interaction between a user and an application, including the
+user and applications themselves.}
+
+Bezogen auf unsere Arbeit bedeutet dies, dass der Kontext jede Information ist, die zur Beschreibung einer relevanten Entität verwendet werden kann. Außerdem muss der Kontext für die \gls{sd} so strukturiert sein, dass alle beteiligten Entitäten darin zusammengefasst und verwaltet werden können.
+
+Hier nutzt die \gls{sd} einen Kontext, welcher für jeden einzelnen Anwendungsbereich neu modelliert wird. Dafür muss im Vorfeld recherchiert werden, welche Informationen die einzelnen Entitäten liefern können und für die Interaktion wichtig sind.
+Ist zum Beispiel ein Sensor in der Interaktion beteiligt, so muss die Frage geklärt werden, ob der Messwert als Information ausreicht, oder ob zusätzliche Informationen wie Hersteller, Standort, oder Größe eine wichtige Rolle spielen.
+
+Ein weiterer wichtiger Punkt ist die Art und Weise, wie die \gls{sd} alle erforderlichen Informationen abfragen kann. Häufig besitzen die Entitäten dafür eine vordefinierte Schnittstelle, welche die bei einer Abfrage die gewünschten Werte zurückliefert.
+Eine weitere Möglichkeit wäre das manuelle Eintragen von Werten. Das sollte allerdings vermieden werden, damit das System autonom bleibt. Eine mögliche Ausnahme können statische Werte sein, die sich ohnehin nicht ändern.
+
+Haben wir ein System, das solch einen Kontext berücksichtigt, dann wird von Context-Awareness gesprochen. Es nutzt bei Anfragen eines Benutzers die vorhandenen Informationen, um eine bestmögliche Antwort zu liefern.
+In dem Bereich der \gls{sd} werden so gezielt Services lokalisiert und genutzt.

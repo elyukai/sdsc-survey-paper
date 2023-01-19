@@ -1,0 +1,13 @@
+\section{Diskussion}\label{sec:discussion}
+
+Aus der gesammelten Recherche geht hervor, dass sich die vorgestellten \glspl{sd} nicht optimal eignen, um als \gls{sd} einer Schnittstelle zu dienen, über die Städte gesammelte Daten öffentlich zugänglich machen können.
+Bei allen Varianten besteht das Hauptproblem dabei darin, dass keinerlei Standardisierung vorhanden ist. Das bedeutet nicht, dass man diese Ansätze nicht dennoch weiter verfolgen könnte, aber es empfiehlt sich, stattdessen mit den Standards des \gls{wot} zu arbeiten.
+
+Dabei lässt sich als Erstes festhalten, dass auch die Standards des \gls{w3c} \autocite{w3c.wot.architecture.20200408, w3c.wot.td.20200623, w3c.wot.bt.20200130, w3c.wot.scriptingapi.20201124, w3c.wot.discovery.20210602, w3c.wot.spg.20191106} für das \gls{wot} noch nicht vollständig erstellt wurden. Das hat zur Folge, dass einige Aspekte zum aktuellen Zeitpunkt noch unklar sind und sich Hintergründe der Spezifikationen nicht immer nachvollziehen lassen. Obwohl es nicht immer ratsam ist, sich auf unfertige Arbeiten zu beziehen, kann davon ausgegangen werden, dass diese Arbeiten später die Grundlage für noch fehlende Standards bilden werden und daher als Grundlage genutzt werden können.
+
+Die Spezifikationen decken zu diesem Zeitpunkt noch keine \glsxtrshort{qos}[-basierte] \gls{sd} ab. Unter anderem Informationen zur Verfügbarkeit und Aktualisierungsrate von Services können daher nicht direkt mit in Betracht genommen werden. An dieser Stelle haben wir weiterhin nach Möglichkeiten recherchiert, \gls{qos}[-Aspekte] zu beachten. Unter anderem wird in \citetitle{Sciullo.DeterministicIndustrialNetworkingWebOfThings.2020} \autocite{Sciullo.DeterministicIndustrialNetworkingWebOfThings.2020} ein erweitertes Vokabular für \glspl{td} vorgestellt, mit dem \gls{qos}[-Aspekte] definiert werden können.
+
+Die Sicherheitsaspekte, die vom \gls{w3c} für das \gls{wot} beschrieben werden, müssen bei der Entwicklung der bereits erwähnten Schnittstelle nicht weiter in Betracht gezogen werden.
+Bei Daten, die von Städten zur Verfügung gestellt werden, handelt es sich meist um Open-Data, wo die Daten ohnehin frei zugänglich sind. Da es sich zudem nicht um personenbezogene Daten handelt, muss auch der Datenschutz nicht weiter beachtet werden.
+
+Ein Problem, das teilweise bestehen bleibt, ist die Ontologie bei der Suche nach Services. Mit den beschriebenen Ansätzen ist es möglich, diese bei der \gls{sd} in Betracht zu ziehen, aber es gibt keine allgemeingültigen Ontologien, die dafür verwendet werden können. Es ist daher nötig, eine eigene Ontologie zu erstellen.

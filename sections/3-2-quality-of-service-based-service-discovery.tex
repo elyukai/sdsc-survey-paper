@@ -1,0 +1,25 @@
+\subsection{Quality-of-Service-basiert}\label{subsec:qosbasedsd}
+
+Bei der \glsdisp{qos}{Quality-of-Service-basierten (QoS)} \gls{sd} stehen nichtfunktionale Bewertungskriterien im Vordergrund. Diese werden auf die Sicht des Anwendenden bezogen und können als Güte für deren Anforderungen verstanden werden.
+
+Die verschiedenen \gls{qos}-Ansätze werden für die \gls{sd} in verschiedene Unterkategorien sortiert \autocite{Achir.2020.AtosdaiI}. Je nach Optimierungsziel des Ansatzes wird dieser folgenden Kategorien zugeordnet:
+
+\begin{itemize}
+    \item Sicherheitsbasiert
+    \item Energieverbrauchsbasiert
+    \item Netzinfrastrukturbasiert
+\end{itemize}
+
+Des Weiteren wird eine Hybrid-Kategorie gebildet, um Ansätze, die mehrere Faktoren abdecken, aufzunehmen. Eine \gls{qos}-basierte \gls{sd} verfolgt verschiedene Ziele. Die Geschwindigkeit bei der Suche soll z.\,B.\ möglichst schnell ablaufen. Algorithmen, die sich auf dieses Ziel konzentrieren, werden daher in die Netzinfrastruktur-Kategorie eingeordnet. Andere Algorithmen, die den Prozess hinsichtlich der Sicherheit der Suche z.\,B.\ mithilfe von Authentifizierungen verbessern, können für diese Arbeit vernachlässigt werden, da es sich um einen Open-Data-Standard handeln soll. Die Kategorie für den Energieverbrauch hat, zusätzlich zur Netzinfrastruktur, eine hohe Bedeutung für den Bereich dieser Arbeit. Es muss darauf geachtet werden, dass die Services möglichst wenige und kurze Berechnungen zur \gls{sd} durchführen müssen.
+
+
+Die \gls{qos}-basierte \gls{sd} nutzt unterschiedliche Verarbeitungsinformationen, basiert jedoch im Grundsatz auf vorhandenen \gls{sd}-Ansätzen, wie z.\,B.\ dem semantischen Ansatz. Das Finden der Dienste basiert häufig auf den vorhandenen Ansätzen. Nachdem ein Dienst gefunden wurde, fungiert die \glsxtrshort{qos}-basierte \gls{sd} als eine Art \glsxtrshort{qos}-Filter \autocite{Kosunalp.2020.SArlbQaIsdm}. Dadurch werden Dienste, die nicht verfügbar oder nach vorhandenen Information nicht geeignet sind, eliminiert.
+
+SARL \autocite{Kosunalp.2020.SArlbQaIsdm} ist ein Konzept, das die \glsxtrshort{qos}-basierte \gls{sd} nutzt. Es basiert auf einem P2P-Konzept, das noch keine \glsxtrshort{qos}-Faktoren abdeckt. Die einzelnen Services kennen bei diesem Ansatz nur die Art der Daten, die sie selbst bereitstellen, und Wege zu Nachbarknoten.
+Es gibt verschiedene Ansätze, den Weg zum Zielknoten (Zieldienst) zu finden.
+
+Ein nicht \glsxtrshort{qos}-basierter Ansatz ist, die Suchanfrage ohne zusätzliche Informationen zu nutzen, von Knoten zu Knoten zu schicken, bis sie beim Ziel ankommt. Dadurch entsteht ein Nachrichtenüberfluss, der die Geschwindigkeit verlangsamt und somit für Nutzende im Hinblick auf die Zuverlässigkeit wahrnehmbar ist.
+
+Bei einem \glsxtrshort{qos}-basierten Ansatz werden zur Weiterleitung zwischen den Knoten (Diensten) verschiedene Informationen herangezogen. Es wird ein \glsxtrshort{qos}-Ranking gebildet, das die Rückgabe eines Dienstes bestimmt. Dieses basiert auf Informationen von vorherigen Anfragen oder selbstständig gesammelten Informationen. Damit verbessert der SARL-Ansatz die \gls{qos} hinsichtlich der Netzinfrastruktur.
+
+Die Schwierigkeit bei Verbesserungen hinsichtlich der \gls{qos} besteht darin, Mittelwege zwischen aktuellen Informationen über andere Knoten und veralteten Daten zu finden. Die Netzwerklast kann beispielsweise nicht nur von zu vielen unstrukturierten Abfragen, sondern auch von zu vielen Abfragen, die den Status einzelner Knoten erfassen, erhöht werden. Dies hat eine Verletzung der \glsxtrshort{qos}-Faktoren zur Folge.

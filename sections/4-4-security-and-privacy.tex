@@ -1,0 +1,17 @@
+\subsection{Sicherheit \& Datenschutz}\label{sec:wotsecurityprivacy}
+
+Die Sicherheit eines \glsxtrshort{wot}-Systems kann sich auf die Sicherheit der \gls{td} selbst, oder auf die Sicherheit des \gls{thing}[s] beziehen.
+Das \gls{wot} führt keine neuen Sicherheitsmechanismen ein. Es wird lediglich garantiert, dass bestehende Funktionalität und Sicherheit der Systeme beibehalten wird.
+Hierbei werden verschiedene Anforderungen gestellt. Bei der Offenlegung einer \gls{td} sollte es z.\,B.\ möglich sein, bewährte Verfahren für die Sicherheit und Integrität anzuwenden.
+Eine \gls{td} sollte zudem den tatsächlichen Sicherheitsstatus des von ihr beschriebenen Geräts genau wiedergeben.
+Das \gls{wot} kann potenziell auf viele Protokolle angewendet werden. Für die Begrenzung des Umfangs wird sich aber hauptsächlich auf HTTP(S), CoAP(S) und MQTT(S) konzentriert.
+Das \gls{wot} stellt zudem ein Framework bereit, welches eine Reihe möglicher Bedrohungen und Sicherheitsziele auflistet, die ein Anwender berücksichtigen sollten.
+Des Weiteren werden Sicherheitspraktiken für die Gestaltung einer \gls{td} beschrieben, sowie ein Beispiel für eine sichere Konfiguration vorgeführt.
+
+Mehrere Bedrohungen können die Privatsphäre von \glsxtrshort{wot}-Betreibern beeinträchtigen. Ein Betreiber kann hier z.\,B.\ eine Person sein, die ein Smart-Home besitzt,
+oder eine Firma, die mehrere \glsxtrshort{wot}-\glspl{thing} in einer Fabrik betreibt.
+Eine \gls{td} kann z.\,B.\ datenschutzrelevante Informationen preisgeben, wie die detaillierte Konfiguration eines einzelnen \gls{thing}[s].
+Es können ebenfalls datenschutzrelevante Informationen durch Beobachtung der Kommunikation zwischen einem WoT-Endpunkt (Client, Server oder Gerät) und einer \gls{tdd} ermittelt werden.
+Abhängig von der Netzwerktopologie können \glsxtrshort{wot}-Systeme Betreiberdaten zwischen dem \glsxtrshort{wot}-Konsumenten und dem \glsxtrshort{wot}-\gls{thing} über viele Zwischenknoten übertragen werden.
+Wenn diese Knoten auf die Betreiberdaten zugreifen oder sie verarbeiten, kann es dazu kommen, dass ungewollt Informationen preisgeben werden.
+Zusätzlich zu den oben beschriebenen Maßnahmen ist es wichtig, die Betreiber über die gesammelten Daten zu informieren und ihnen die Möglichkeit zu geben, den Grad dieser Offenlegung zu kontrollieren.

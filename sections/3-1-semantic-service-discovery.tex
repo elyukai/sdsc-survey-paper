@@ -1,0 +1,22 @@
+\subsection{Semantisch}\label{subsec:semanticsd}
+
+Das Ziel der semantischen \gls{sd} ist es, den Service, der am besten zu den gegebenen Ansprüchen passt, mithilfe einer Ontologie zu finden.
+Eine Ontologie stellt dabei die Zusammenhänge zwischen verschiedenen Begriffen oder Eigenschaften dar, die in der Suche genutzt werden können. Die Begriffe selbst werden ebenso definiert und beschrieben, um für das jeweilige Themengebiet ein einheitliches Vokabular nutzen zu können. Auf diese Weise ist es möglich, ein gemeinsames Verständnis über ein bestimmtes Gebiet zu schaffen.
+Dabei können im Gegensatz zu den meisten anderen Systemen Services nicht nur funktionale, sondern auch nicht funktionale Eigenschaften -- wie Performance, Kosten oder Zuverlässigkeit -- beachtet werden.
+
+Zum Erstellen einer semantischen Service Discovery gibt es keine festgelegte Standardisierung, die verfolgt werden muss.
+Bei bisherigen Arbeiten wurde daher jeweils ein eigener Ansatz entworfen und umgesetzt. Diese Ansätze können mehr oder weniger stark voneinander abweichen.
+
+In der Arbeit von \citeauthor{Suraci.2008.CaSSD} \autocite{Suraci.2008.CaSSD} wird eine kontextbewusste Architektur vorgestellt, die für eine Service Discovery genutzt werden kann. Die Architektur selbst ist dabei nicht abhängig von der verwendeten Technologie und kann mit vielen vorhandenen Service-Discovery-Protokollen genutzt werden.
+
+Im Kontrast dazu handelt die Arbeit von \citeauthor{Iqbal.12320081252008.SSDuSaS} \autocite{Iqbal.12320081252008.SSDuSaS} davon, wie Services, spezifisch mit SAWSDL und SPARQL, beschrieben werden können.
+Auch \citeauthor{BenMokhtar.2006.ESSDiPCE} \autocite{BenMokhtar.2006.ESSDiPCE} bauen bei ihrer Arbeit auf spezifische Sprachen auf. Sie nutzen Amigo-S für semantische Spezifikationen und S-Ariadne, eine Erweiterung von Ariadne, als Discovery-Protokoll. Ihr Ziel war es, einen effizienten Weg zum Finden von Services zu entwickeln.
+
+In weiteren Arbeiten geht es häufig darum, wie und auf Basis welcher Grundlagen passende Services für die Nutzer ausgewählt werden können.
+\citeauthor{Majithia.2004.Rbssd} \autocite{Majithia.2004.Rbssd} haben so beispielsweise ein Framework entwickelt, dass Services basierend auf ihrem Ruf findet. Zu dem Ruf eines Services gehört dabei unter anderen dessen Zuverlässigkeit und Erreichbarkeit.
+\citeauthor{Jia.2017} \autocite{Jia.2017} schlagen hingegen ein zentralisiertes, mehrstufiges semantisches Service-Matching vor, das in vier Schichten abläuft, und
+\citeauthor{Zhao.2017} \autocite{Zhao.2017} legen ihren Fokus auf die Beschreibung von IoT-Services und deren Ähnlichkeit zueinander. Dabei werden die Ähnlichkeiten gemessen und ein Cluster erstellt, um ähnliche Services zu sammeln.
+
+Ein Vorteil der semantischen Service Discovery ist, dass Ontologien mit in Betracht gezogen werden können.
+Aufgrund der fehlenden Standardisierung müssen Arbeiten jedoch von Grund auf eigenständig entwickelt werden.
+Das kann Vorteile mit sich bringen, aber ist gleichzeitig mit einer großen Arbeitslast verbunden und nicht für alle Projekte geeignet.

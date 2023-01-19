@@ -1,0 +1,25 @@
+\section{\Glsfmtlong{wot}}\label{sec:wot}
+
+Ein Problem bei der Service Discovery im \gls{iot} sind immer die Interoperabilität und Kompatibilität zwischen verschiedenen Systemen. Ein Bereich, in dem diese Aspekte von großer Relevanz sind, ist das Internet. Webtechnologien müssen für eine Vielzahl von Geräten und Anwendungen funktionieren. So wurde das Internet auch als Inspirationsquelle für die Lösung solcher und anderer Probleme im \gls{iot} genutzt. Diese Kombination wird im Allgemeinen als \gls{wot} bezeichnet.
+
+Das \gls{wot} ist eine Erweiterung des \gls{iot}, die grundsätzlich die \glspl{thing} (oder deren \glspl{intermediary}) um eine Web-Server-Komponente erweitert, mit der Kommunikation von außen über einen \gls{uri} oder \gls{iri} initialisiert und durchgeführt werden kann.
+
+Im Laufe der Jahre haben sich dabei die \glsxtrshort{wot}-Spezifikationen und -Empfehlungen des \gls{w3c}[s], welches auch die Spezifikationen für andere Webtechnologien herausbringt, zu den meistgenutzten und vollständigsten entwickelt \autocite[vgl.][47573]{Sciullo.2022.ASotWoT}, weshalb diese in den nachfolgenden Unterkapiteln näher betrachtet werden.
+
+Es gibt verschiedene Spezifikations- und Richtliniendokumente, die das \gls{w3c} bereitstellt.
+
+\begin{itemize}
+  \item Die \emph{Architecture} \autocite{w3c.wot.architecture.20200408} gibt einen Überblick über das \gls{wot}, welches vom \gls{w3c} standardisiert bzw.\ empfohlen wird.
+  \item Die \emph{\glsfmtlong{td}} \autocite{w3c.wot.td.20200623} ist die Spezifikation für das Format, in dem einzelne \glspl{wt} beschrieben werden.
+  \item Die \emph{Binding Templates} \autocite{w3c.wot.bt.20200130} sind Richtlinien, wie Netzwerkschnittstellen definiert werden sollen.
+  \item Die \emph{Scripting API} \autocite{w3c.wot.scriptingapi.20201124} beschreibt eine (optionale) JavaScript-API, die für eine Anwendung genutzt werden kann, die auf das \gls{wot} zugreifen können soll.
+  \item Die \emph{Discovery} \autocite{w3c.wot.discovery.20210602} beschreibt, wie sich sowohl \glspl{thing} nach außen bekannt machen können, als auch Anwendungen nach existierenden \glspl{thing} erkundigen können. Zum Zeitpunkt der Erstellung dieses Berichts ist dieses Dokument jedoch noch nicht in einem fertigen Zustand gewesen.
+  \item Die \emph{Security und Privacy Guidelines} \autocite{w3c.wot.spg.20191106} enthalten Richtlinien zur sicheren Implementierung und Konfiguration von \glspl{thing} sowie möglicherweise auftretende Probleme und deren Behebung.
+\end{itemize}
+
+Es gibt noch weitere Dokumente, die jedoch nicht relevant für den Anwendungszweck der Service Discovery sind und daher hier nicht angeführt werden. Sie können unter \url{https://www.w3.org/TR/?tag=wot} eingesehen werden.
+
+\input{sections/4-1-architecture}
+\input{sections/4-2-thing-description}
+\input{sections/4-3-discovery}
+\input{sections/4-4-security-and-privacy}
